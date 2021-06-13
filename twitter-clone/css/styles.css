@@ -1,0 +1,303 @@
+body{
+	padding :0px;
+	margin: 0px;
+	position: relative;
+	font-size: 20px;
+	font-family: sans-serif;
+
+}
+
+.content{
+	display:flex;
+	justify-content: space-between;
+	padding-bottom:21vh;
+}
+.left-section{
+	width:50%;
+	
+}
+
+.back-img{
+	position: relative;
+	height:100%;
+}
+
+.back-img img{
+	position:absolute;
+	top:0px;
+	width:100%;
+
+	
+}
+
+.img-txt-logo-class{
+	z-index :1;
+	position: absolute;
+	top:45%;
+	left:26%;
+	width:100%;
+	
+}
+
+.img-txt-logo{
+padding-bottom: 3rem;
+}
+
+
+
+.img-txt{
+	display: inline-block;
+	padding-left: 0.5rem;
+	display:inline-block;
+	color:white;
+	font-weight:bolder;
+	font-size: 100%
+	
+	}
+
+.img-txt-hear2{
+	display:none
+}
+
+.img-txt-small{
+	display:none
+}
+.right-section{
+	margin-top:8%;
+	margin-right: 10%;
+	width:30%;
+	
+}
+
+.right-section small{
+	display:inline-block;
+	margin-top:2.5rem;
+	font-weight: bolder;
+}
+
+.signup-button{
+	border:0.09rem solid transparent;
+	border-radius:2.5rem;
+	padding:0.4rem 2rem 0.4rem 2rem;
+	background-color: rgb(29, 161, 242);
+	color:white;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-weight: bolder;
+	cursor:pointer;
+	transition:background-color 0.5s;
+	
+}
+
+.login-button{
+	border:0.01rem solid rgb(29,161,242);
+	border-radius:2.5rem;
+	padding:0.4rem 2rem 0.4rem 2rem;
+	color:rgb(29, 161, 242);
+	font-weight: bolder;
+	cursor:pointer;
+	transition: background-color 0.5s;
+}
+
+.signup-button:hover{
+	background-color: rgb(10,120,255);
+}
+
+.login-button:hover{
+	background-color: rgba(29,161,242,0.15);
+}
+
+.sign-login{
+	display:none;
+	justify-content: space-around;
+}
+
+footer{
+position:relative;
+bottom:0px;
+width:100%;
+height:5vh;
+z-index :1;
+font-size:65%
+}
+
+.upper-footer{
+	position:absolute;
+	top:0px;
+	width:100%;
+	float:left;
+	justify-content: space-around;
+	
+}
+	
+
+.upper-footer a{
+	cursor:pointer;
+	color:rgb(91, 112, 131);
+	border-bottom:0.01rem solid transparent;
+	margin-left: 0.6rem;
+	margin-right: 0.4rem;
+	transition: border-bottom ;
+	line-height:1.8rem;
+	
+
+	
+}
+
+.upper-footer a:hover{
+border-bottom: 0.01rem solid rgb(91, 112, 131);
+
+}
+
+.last-link{
+	margin-left:1rem;
+}
+.lower-footer{
+	
+	position: absolute;
+	bottom:0px;
+	color:rgb(91, 112, 131);
+	width:100%;
+}
+
+@media screen and (max-width:1031px){
+  
+	.content{
+		flex-direction: column-reverse;
+		justify-content: center;
+		width: 100%;
+		}
+
+	.sign-login{
+
+		position:relative;
+    	display:block;
+    	z-index:3;
+    	margin-top:90%; 	
+    }
+
+    .footer{
+    	margin-bottom:rem
+    }
+    
+	.left-section{
+		width:100%;
+
+	}
+	.img-txt-logo-class{
+		margin-top:25%;
+
+	}
+
+	.right-section{
+		width:100%;
+		padding:0px;
+		margin:1rem;
+	}
+	 .login-button ,.signup-button{
+		width:50%;
+        margin-left:20%
+		}
+
+	.twittertext{
+		margin-left: 20%
+	}
+	.right-section small{
+		margin-left:20%
+	}
+
+    
+}
+
+@media screen and (max-width:500px){
+        .right-section .signup-button,.right-section .login-button{
+	 margin-left:8%
+}
+
+		.twittertext{
+		margin-left: 7%;
+		font-size:130%
+	}
+	.right-section small{
+		margin-left:8%
+	}
+
+}
+
+@media screen and (max-width:524px){
+
+.left-section .img-txt-logo-class{
+margin-top:15%;
+margin-left:-6%}
+
+}
+
+@media screen and (max-width:480px){
+.left-section .img-txt-logo-class{
+	margin-left:-12%
+}
+
+footer{
+	font-size:55%
+}
+}
+
+@media screen and (max-width:444px){
+.img-txt-hear2{
+	display:inline;
+}
+.img-txt-hear{
+	display:none
+}	
+
+}
+
+@media screen and (max-width:330px){
+	.left-section .img-txt-logo-class{
+		margin-top:7%;
+		}
+	body{
+		font-size:18px
+	}
+
+
+	.img-txt-logo{
+		padding-bottom:2rem
+	}
+
+
+}
+
+@media screen and (max-width:274px){
+	
+	.left-section .img-txt-logo-class{
+		font-size:87%
+	}
+}
+
+@media screen and (max-width:268px){
+
+.img-txt-logo{
+		padding-bottom:1rem
+	}
+
+}
+
+@media screen and (max-width:242px){
+.img-txt{display:none}
+
+.img-txt-small{
+	display:inline
+}	
+
+.left-section .img-txt-logo-class{
+		margin-top:1%;
+		font-size:75%
+}
+
+.img-txt-logo{
+		padding-bottom:0.4rem
+	}
+
+
+}

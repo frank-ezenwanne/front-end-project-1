@@ -1,0 +1,170 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	padding:0px;
+	margin:0px;
+	font-size :20px;
+}
+
+.num-box{
+	margin-top: 0.6rem;
+	border :0.3rem solid blue;
+	width:15rem;
+	height:2rem;
+	
+	border-radius: 2rem;
+}
+
+.input-box{
+	position :relative;
+	display:inline-block;
+	left:30%;
+	padding : 5rem 5rem 12rem 5rem;
+	border :0.2rem solid green;
+	margin-top: 3rem;
+}
+
+.head-text{
+	top:0%;
+	position: relative;
+	color:rgb(230,230,230);
+	
+}
+
+.total-state{
+	
+	margin-top:2rem;
+	color:white;
+}
+
+
+.error{
+	font-size:80%;
+	color:red;
+	display: inline-block;
+	width:12rem;
+	height:1rem;
+	word-wrap:break-word;
+}
+
+
+@media only screen and (max-width: 720px){
+.input-box{
+	left:20%;
+}
+
+}
+
+@media only screen and (max-width: 538px){
+.input-box{
+	left:20%;
+	padding : 3rem 3rem 12rem 3rem;
+	
+	}
+}
+
+@media only screen and (max-width: 473px){
+.input-box{
+	left:10%;
+	padding : 3rem 3rem 8rem 3rem;
+	
+	}
+.num-box{
+	
+	width:10rem;
+	height:2rem;
+	
+}
+
+}
+
+@media only screen and (max-width: 323px){
+	.head-text{
+	font-size: 120%
+}
+	}
+
+@media only screen and (max-width: 316px){
+	.input-box{
+	left:20%;
+	padding : 3rem 2rem 4rem 2rem;
+	
+}
+	.num-box{
+	
+	width:7rem;
+	height:2rem;
+	
+}
+	.head-text{
+	font-size: 100%
+
+}
+
+@media only screen and (max-width: 262px){
+.input-box{
+	left:10%;
+	padding : 3rem 2rem 4rem 2rem;
+	
+}
+}
+
+@media only screen and (max-width: 225px){
+.input-box{
+	left:5%;
+	padding : 2rem 1.5rem 4rem 1rem;
+	
+}
+.num-box{
+	
+	width:7rem;
+	height:1rem;
+	}}
+

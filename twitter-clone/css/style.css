@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+body{
+	padding :0px;
+	margin: 0px;
+	position: relative;
+	font-size: 20px;
+	font-family: sans-serif;
+
+}
+
+.content{
+	display:flex;
+	justify-content: space-between;
+	padding-bottom:21vh;
+}
+.left-section{
+	width:50%;
+	
+}
+
+.back-img{
+	position: relative;
+	height:100%;
+}
+
+.back-img img{
+	position:absolute;
+	top:0px;
+	width:100%;
+
+	
+}
+
+.img-txt-logo-class{
+	height:100%;
+	z-index :1;
+	position: absolute;
+	top:45%;
+	left:26%;
+	width:100%;
+	
+}
+
+.img-txt-logo{
+padding-bottom: 3rem;
+}
+
+.img-txt-logo .img{
+	display: block;
+	width:100%;
+	height: 100%
+}
+
+
+.img-txt{
+
+	padding-left: 0.5rem;
+	display:inline-block;
+	color:white;
+	font-weight:bolder;
+	font-size: 100%
+	
+	}
+
+.right-section{
+	margin-top:8%;
+	margin-right: 10%;
+	width:30%;
+}
+
+.right-section small{
+	display:inline-block;
+	margin-top:2.5rem;
+	font-weight: bolder;
+}
+
+.signup-button{
+	border:0.09rem solid transparent;
+	border-radius:2.5rem;
+	padding:0.4rem 2rem 0.4rem 2rem;
+	background-color: rgb(29, 161, 242);
+	color:white;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-weight: bolder;
+	cursor:pointer;
+	transition:background-color 0.5s;
+	
+}
+
+.login-button{
+	border:0.01rem solid rgb(29,161,242);
+	border-radius:2.5rem;
+	padding:0.4rem 2rem 0.4rem 2rem;
+	color:rgb(29, 161, 242);
+	font-weight: bolder;
+	cursor:pointer;
+	transition: background-color 0.5s;
+}
+
+.signup-button:hover{
+	background-color: rgb(10,120,255);
+}
+
+.login-button:hover{
+	background-color: rgba(29,161,242,0.15);
+}
+
+.sign-login{
+	display:block;
+
+}
+
+footer{
+position:relative;
+bottom:0px;
+width:100%;
+height:5vh;
+z-index :1;
+font-size:65%
+}
+
+.upper-footer{
+	position:absolute;
+	top:0px;
+	width:100%;
+	float:left;
+	justify-content: space-around;
+	
+}
+	
+
+.upper-footer a{
+	cursor:pointer;
+	color:rgb(91, 112, 131);
+	border-bottom:0.01rem solid transparent;
+	margin-left: 0.6rem;
+	margin-right: 0.4rem;
+	transition: border-bottom ;
+	line-height:1.8rem;
+	
+
+	
+}
+
+.upper-footer a:hover{
+border-bottom: 0.01rem solid rgb(91, 112, 131);
+
+}
+
+.last-link{
+	margin-left:1rem;
+}
+.lower-footer{
+	
+	position: absolute;
+	bottom:0px;
+	color:rgb(91, 112, 131);
+	width:100%;
+}
+
+@media screen and (max-width:1031px){
+	.sign-login{
+		display:block;
+	}
+	.content{
+		flex-direction: column-reverse;
+		justify-content: center;
+		width: 100%
+		}
+
+	.left-section{
+		width:100%;
+
+	}
+
+	.right-section{
+		width:100%;
+		margin-bottom: 4rem;
+		margin-right: -20%;
+	}
+	.right-section .signup-button, .login-button{
+		width:50%;}
+
+	.twittertext {
+		margin-left:20%;
+	}
+
+}
